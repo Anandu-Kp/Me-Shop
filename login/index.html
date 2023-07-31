@@ -1,10 +1,14 @@
 <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
 
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>MeShop.</title>
+  <title>Profile</title>
   <meta name="description" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="./styles.css" />
@@ -24,22 +28,16 @@
     </div>
   </nav>
 
-
   <main>
-
-    <div class="left-container">
-      <span>MeShop</span>
-      <p>My First Shop Built On HTML, CSS & Javascript.</p>
-      <div class="buttons">
-        <button class="login" id="login" style=" background-color: black;">Login</button>
-        <button class="signup" id="signup">Signup</button>
-      </div>
+    <div class="main">
+      <span class="top-title">LOGIN</span>
+      <input type="email" placeholder="Email">
+      <input type="password" placeholder="Password">
+      <button class="save-info" id="save-info">Login</button>
     </div>
-
-    <img src="./landingPagePic.png" alt="">
   </main>
 
-  <script src="./script.js"></script>
+  <script src="./script.js" async defer></script>
 </body>
 
 </html>

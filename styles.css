@@ -1,1 +1,107 @@
 /* Write styles here */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    overflow-x: hidden;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+input[type="range"] {
+    width: 100%;
+    height: 2px;
+    margin: 1rem auto;
+}
+
+datalist {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+
+    background-color: black;
+    border-bottom: 1px solid white;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+nav .brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav .nav-items a {
+    margin: 0 1rem;
+}
+
+
+/* -----MAIN----- */
+
+main {
+    display: flex;
+}
+
+.left-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 50px;
+    padding-top: 50px;
+    width: 40%;
+}
+
+.left-container span {
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.left-container p {
+    font-size: 20px;
+}
+
+.left-container div {
+    display: flex;
+    gap: 20px;
+}
+
+.left-container div button {
+    padding: 10px;
+    font-size: 18px;
+    width: 180px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.login {
+    color: white;
+}
+
+img {
+    width: 50%;
+    padding-top: 100px;
+}

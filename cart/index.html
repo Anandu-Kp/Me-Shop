@@ -1,13 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Cart</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="#" type="image/x-icon">
+  <title>My Cart</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <nav>
+    <div class="brand">
+      <a href="/">MeShop.</a>
+    </div>
+    <div class="nav-items">
+      <a href="/shop">Home</a>
+      <a href="/login">Login</a>
+      <a href="/signup">Signup</a>
+      <a href="/cart">My Cart</a>
+      <a href="/profile/">My Profile</a>
+    </div>
+  </nav>
+  <title class="my-cart">My Cart</title>
+  <main>
+
+    <main-content>
+      <div class="container" id="container">
+
+        <div class="items" id="items">
+          <!-- <div class="item">
+            <div class="image">
+              <img src="tshirt.png" alt="Item" />
+            </div>
+            <div class="info">
+              <span>Title : title</span>
+              <span>Price : price</span>
+            </div>
+            <button id="addBtn">Add to Cart</button>
+          </div> -->
+
+        </div>
+
+      </div>
+    </main-content>
+
+
+
+    <aside>
+      <div class="cart-items" id="cart-items">
+
+        <title>Checkout List</title>
+        <div class="checkout-list" id="checkout-list">
+          <!-- <div class="checkoutProduct">
+            <span>Shirt</span>
+            <span>$100</span>
+          </div>
+          <div class="checkoutProduct">
+            <span>Shirt</span>
+            <span>$100</span>
+          </div>
+          <div class="checkoutProduct">
+            <span>Shirt</span>
+            <span>$100</span>
+          </div>
+          <div class="checkoutProduct">
+            <span>Shirt</span>
+            <span>$100</span>
+          </div>
+          <div class="checkoutProduct">
+            <span>Shirt</span>
+            <span>$100</span>
+          </div> -->
+        </div>
+        <div class="total" id="total">
+
+        </div>
+        <button class="checkout" id="checkout">Checkout</button>
+      </div>
+    </aside>
+  </main>
+
+  <script src="./script.js"></script>
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</body>
+
 </html>

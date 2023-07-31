@@ -4,7 +4,10 @@
 // Add button code documentation:
 // https://razorpay.com/docs/payments/payment-gateway/web-integration/standard/build-integration#code-to-add-pay-button
 
+console.log("inside payment");
+
 document.getElementById("rzp-button1").onclick = function (e) {
+  console.log("checkout clicked");
   var options = {
     key: "<API_KEY>", // Enter the Key ID generated from the Dashboard
     amount: 300 * 100, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise

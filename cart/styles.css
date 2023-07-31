@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    overflow-x: hidden;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+input[type="range"] {
+    width: 100%;
+    height: 2px;
+    margin: 1rem auto;
+}
+
+datalist {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+
+    background-color: black;
+    border-bottom: 1px solid white;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+nav .brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav .nav-items a {
+    margin: 0 1rem;
+}
+
+
+/* main container */
+main {
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+main-content {
+    padding: 1rem;
+    position: relative;
+    width: 80%;
+}
+
+.my-cart {
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+
+
+
+
+title {
+    display: block;
+    font-size: 1.5rem;
+}
+
+
+
+main-content .items {
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+    padding-top: 16px;
+    padding-left: 7vw;
+
+    gap: 30px;
+}
+
+
+
+
+
+.item {
+    border: 1px solid black;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.image {
+    height: 300px;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item img {
+    max-width: 100%;
+    /* max-height: 200px; */
+}
+
+
+
+.item .info {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.item button {
+    width: 100%;
+    border-radius: none;
+    border: none;
+    padding: 1rem;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+
+
+/* -----checkout----- */
+
+aside {
+    width: 17%;
+    height: auto;
+    background-color: black;
+    color: white;
+    margin: 36px 30px;
+    padding: 30px 0;
+
+}
+
+aside title {
+    padding-bottom: 20px;
+}
+
+.cart-items {
+    padding: 40px 0;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.checkout-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+}
+
+.checkout-list div {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.checkout-list div span {
+    align-self: center;
+}
+
+.total {
+    border-bottom: 1px solid white;
+    width: 100%;
+    padding-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.checkout {
+    padding: 10px;
+    width: 100%;
+    font-size: 20px;
+}
