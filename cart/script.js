@@ -1,10 +1,10 @@
-// if (localStorage.getItem("token") == undefined) window.location.href = "../index.html"
+if (localStorage.getItem("token") == undefined) window.location.href = "../index.html"
 
 let cartList = JSON.parse(localStorage.getItem("cartList"));
 const container = document.getElementById("items");
 const checkoutList = document.getElementById("checkout-list");
 let total = document.getElementById("total");
-const checkoutBtn = document.getElementById("checkout");
+const checkoutBtn = document.getElementById("checkoutBtn");
 console.log(cartList);
 
 function displayCart() {
@@ -51,7 +51,8 @@ function removeFromCart(event) {
     console.log(event.target.parentNode.id);
     let itemId = event.target.parentNode.id;
     for (let i = 0; i < cartList.length; i++) {
-        if (cartList[i].id = itemId) {
+        if (cartList[i].id == itemId) {
+            console.log(cartList[i]);
             cartList.splice(i, 1);
             break;
         }
@@ -62,18 +63,15 @@ function removeFromCart(event) {
 }
 
 
-function checkout(event) {
-    // document.getElementById("cart-items").removeChild(event.target);
-    container.innerHTML = ``;
-    checkoutList.innerHTML = ``;
-    alert("Items Purchased Succesfully");
-    total.innerHTML = `<span>Total</span>
-                     <span>$0</span>`;
-    localStorage.setItem("cartList", JSON.stringify([]));
-    console.log(event.target);
-}
+// function checkout(event) {
+//     // document.getElementById("cart-items").removeChild(event.target);
+//     container.innerHTML = ``;
+//     checkoutList.innerHTML = ``;
+//     alert("Items Purchased Succesfully");
+//     total.innerHTML = `<span>Total</span>
+//                      <span>$0</span>`;
+//     console.log(event.target);
+// }
 
-
-checkoutBtn.addEventListener("click", checkout)
 
 displayCart();

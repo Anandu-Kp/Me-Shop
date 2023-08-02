@@ -1,3 +1,6 @@
+
+if (localStorage.getItem("token") == undefined) window.location.href = "../index.html";
+
 // for search
 const search = document.getElementById("search");
 
@@ -20,7 +23,6 @@ async function getProducts() {
   console.log(products);
 }
 getProducts();
-console.log("hello");
 
 
 
@@ -43,6 +45,8 @@ function addAllProductsToUi(event) {
   console.log(section1);
 
 }
+
+// called from addAllProductsToUi , to add each sections
 
 function addSection(x) {
   let section = document.createElement("section");
@@ -89,7 +93,7 @@ function addSection(x) {
   return section;
 }
 
-// adding products baesd on category to Ui
+// adding products based on category to Ui
 function addProductsToUi(productList, id) {
   currentCategory.style.color = "black";
   currentCategory.style.backgroundColor = "white";
@@ -137,7 +141,6 @@ function addProductsToUi(productList, id) {
     items.appendChild(item);
   }
   container.appendChild(items);
-  console.log(productList);
 }
 
 
@@ -171,7 +174,7 @@ function searchResultToUi(key) {
   let items = document.createElement("div");
   items.className = "item-container";
   for (product of products) {
-    if (product.title.includes(key)) {
+    if (product.title.startsWith(key)) {
 
       let item = document.createElement("div");
       item.id = product.id;
@@ -220,10 +223,6 @@ function searchFn(event) {
 // add to cart
 
 function addToCart(event) {
-  if (localStorage.getItem("token") == undefined) {
-    alert("you have to sign up/login");
-    return;
-  }
   let product = products[event.target.parentNode.id - 1];
   let cartListString = localStorage.getItem("cartList");
   cartList = JSON.parse(cartListString);

@@ -33,13 +33,21 @@ datalist {
   width: 100%;
 }
 
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: white;
   position: sticky;
-  z-index: 100;
+  z-index: 1000;
   top: 0;
 
   background-color: black;
@@ -60,6 +68,8 @@ nav .nav-items a {
 main {
   display: flex;
   height: 100vh;
+  position: relative;
+  top: 50px;
 }
 
 main aside {
@@ -74,7 +84,7 @@ main aside {
 
 main main-content {
   display: block;
-  width: 100%;
+
   margin-left: 11rem;
 }
 
@@ -112,6 +122,8 @@ aside section label {
 main-content {
   padding: 1rem;
   position: relative;
+  width: 88%;
+
 }
 
 main-content input {
@@ -123,6 +135,7 @@ main-content input {
 
 main-content .filters {
   display: flex;
+  width: 100%;
   margin-top: 1rem;
   gap: 1rem;
 }
@@ -151,27 +164,29 @@ title {
 
 main-content .items {
   display: flex;
-  width: 100vw;
+  width: auto;
   overflow-x: scroll;
   padding: 20px 0;
-  gap: 30px;
+  gap: 20px;
 }
 
 .container {
   margin-top: 1.2rem;
+  width: 100%;
 }
 
 .item-container {
   display: flex;
   flex-flow: row wrap;
-  gap: 30px;
+  gap: 20px;
   padding: 20px 0;
 
 }
 
 .item {
   border: 1px solid black;
-  width: 300px;
+  min-width: 300px;
+  max-width: 301px;
 }
 
 .image {

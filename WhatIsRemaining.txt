@@ -1,0 +1,22 @@
+
+
+{
+    filter
+                        <= IMPORTANT
+    razor pay
+
+}
+
+
+
+
+
+some style issues (sticky nav, checkout list min-width, scroll-X on all section (shop))
+
+
+
+
+
+
+search suggections using(if have time)
+
